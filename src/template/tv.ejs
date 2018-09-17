@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[0] %>">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.iconfont %>">
+  <link rel="stylesheet" name="theme" href="">
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.jquery %>"></script>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.jmessage %>"></script>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<div id="app"></div>
+<script>
+  var projectName = '$!projectName';
+  var jpushUser = '$!jpushUser';
+  var projectId = '$!projectId'
+</script>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[0] %>"></script>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[1] %>"></script>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[2] %>"></script>
+</body>
+</html>
+
